@@ -1,0 +1,45 @@
+Task 2:
+Shuffle Algorithm: O(n)
+Factoral Algorithm: O(n)
+
+Task 3:
+
+Pseudocode for functions that add, subtract and multiple matrices.
+
+These fuctions work by accepting two matrices which are arrays where each row in the matrix is an array within the array. 
+example:
+matrix = [[1,2,3],
+	  [4,5,6],
+	  [7,8,9]]
+
+AddingMatrices(matrix1,matrix2)
+
+	for i <- 0 to length[matrix1]
+		for j <- 0 length[matrix1]
+			matrix1[i][j] = matrix1[i][j] + matrix2[i][j]
+
+	RETURN(matrix1)
+
+Big O notation for this algorithm = O(n^2)
+
+SubtractingMatrices(matrix1,matrix2)
+
+	for i <- 0 to length[matrix1]
+		for j <- 0 length[matrix1]
+			matrix1[i][j] = matrix1[i][j] - matrix2[i][j]
+
+	RETURN(matrix1)
+Big O notation for this algorithm = O(n^2)
+
+when you want to multiply a matrix by and integer or a float
+
+MultiplyingMatrix(matrix,x)
+
+	for i <- 0 to length[matrix]
+		for j <- 0 to length[matrix]
+			matrix[i][j] <- matrix[i][j] * x
+
+
+	RETURN(matrix)
+
+Big O notation for this algorithm = O(n^2)
