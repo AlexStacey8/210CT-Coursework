@@ -1,0 +1,12 @@
+
+Pseudocode for finding the hihgest perfect square given a number
+
+HighestPerfectSquare(x)
+	
+	n <- 1
+	perfectSquare <- 1
+
+	WHILE n*n <= x
+		perfectSquare <- n*n
+		n <- n+1
+	RETURN(perfcetSquare)
