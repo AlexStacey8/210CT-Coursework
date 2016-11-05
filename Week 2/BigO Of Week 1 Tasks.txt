@@ -1,0 +1,3 @@
+Shuffle Program: O(n)
+
+Trailing 0s program: O(n)

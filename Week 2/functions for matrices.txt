@@ -43,3 +43,23 @@ MultiplyingMatrix(matrix,x)
 	RETURN(matrix)
 
 Big O notation for this algorithm = O(n^2)
+
+
+when you want to multiply a matrix by another matrix
+This fuction only works if you provide a Final matrix full of 0s
+for example
+[[1,2],[3,4]] * [[3,5],[2,4]]
+The resulting matrix would be a 2 by 2 matrix so the final matrix would be entered as [[0,0],[0,0]]
+
+MultiplyingMatrix(matrix1,matrix2,finalMatrix)
+
+	for i <- 0 to length[matrix1]
+		for j <- 0 to length[matrix1]
+			for k <- 0 to length[matrix1]
+				matrix[i][j] <- matrix[i][j] * x
+
+
+	RETURN(matrix)
+
+Big O notation for this algorithm = O(n^2)
+
