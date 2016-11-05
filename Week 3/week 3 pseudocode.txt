@@ -1,0 +1,143 @@
+#Week 3 Task 1 Pseudocode
+#reversiving a string function
+
+ReverseAString(sentence):
+	
+	listOfWords <- split sentence at spaces
+
+	n <- length(listOfWords) - 1
+
+	reversedList <- []
+
+	FOR i <- 0 to length[listOfWords]
+	
+		
+		word <- listOfWords[n]
+
+		reversedList.append(word)
+		
+		n <- n - 1
+
+	RETURN(reversedList)
+
+#week 3 task 3
+Removing vowels function
+
+RemoveVowels(string)
+
+	IF a in string
+
+		newString <- replace 'a' in string with ''
+
+		RETURN(RemoveVowels(newString))
+
+	ELIF e in string
+
+		newString <- replace 'e' in string with ''
+
+		RETURN(RemoveVowels(newString)
+
+	ELIF i in string
+
+		newString <- replace 'i' in string with ''
+
+		RETURN(RemoveVowels(newString)
+
+	ELIF o in string
+
+		newString <- replace 'o' in string with ''
+
+		RETURN(RemoveVowels(newString)
+
+	ELIF u in string
+
+		newString <- replace 'u' in string with ''
+
+		RETURN(RemoveVowels(newString)
+
+	ELSE
+		RETURN(string)
+
+
+Big O notation for this function O(n)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#week 3 task 3 Pseudocode
+
+#Removing vowels function
+
+RemoveVowels(string)
+
+	IF a in string
+
+		newString <- replace 'a' in string with ''
+
+		RETURN(RemoveVowels(newString))
+
+	ELIF e in string
+
+		newString <- replace 'e' in string with ''
+
+		RETURN(RemoveVowels(newString)
+
+	ELIF i in string
+
+		newString <- replace 'i' in string with ''
+
+		RETURN(RemoveVowels(newString)
+
+	ELIF o in string
+
+		newString <- replace 'o' in string with ''
+
+		RETURN(RemoveVowels(newString)
+
+	ELIF u in string
+
+		newString <- replace 'u' in string with ''
+
+		RETURN(RemoveVowels(newString)
+
+	ELSE
+		RETURN(string)

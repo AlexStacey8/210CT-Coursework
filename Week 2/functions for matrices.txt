@@ -51,15 +51,25 @@ for example
 [[1,2],[3,4]] * [[3,5],[2,4]]
 The resulting matrix would be a 2 by 2 matrix so the final matrix would be entered as [[0,0],[0,0]]
 
-MultiplyingMatrix(matrix1,matrix2,finalMatrix)
+MultiplyingMatrices(matrix1,matrix2,finalMatrix)
 
 	for i <- 0 to length[matrix1]
 		for j <- 0 to length[matrix1]
 			for k <- 0 to length[matrix1]
-				matrix[i][j] <- matrix[i][j] * x
+				counter <- matrix1[i][k] * matrix2[k][j] 
+				finalMatrix[i][j] <- counter + finalMatrix[i][j]
 
 
-	RETURN(matrix)
+	RETURN(finalMatrix)
 
-Big O notation for this algorithm = O(n^2)
+Big O notation for this algorithm = O(n^3)
+
+
+Method of caculating A = B*C - 2*(B+C)
+
+x <- MultiplyingMatrix(B,C,finalMatrix)
+y <- AddingMatrices(B.C)
+z <- MultiplyingMatrix(y,2)
+
+finalResult <- SubtractingMatrices(x,z)
 
