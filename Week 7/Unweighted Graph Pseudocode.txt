@@ -1,0 +1,32 @@
+Unweighted Graph Data Structure Pseudocode
+
+CLASS Vertex
+	DEF Initializer(self,label)
+		self.label <- label
+		self.edges <- []
+	
+	DEF addEdge(self,vertex2)
+		IF vertex2 in self.edges
+			Pass
+		ELSE
+			(self.edges).append(vertex2)
+		
+			(vertex2.edges).append(self)
+
+
+CLASS Graph
+	DEF Initializer(self):
+		self.vertices <- []
+		self.numberOfVertices <- 0
+
+	DEF addVertex(self,vertex)
+		self.numberOfVertices <- self.numberOfVertices + 1
+		
+		v <- Vertex(vertex)
+		(self.vertices).append(v)
+
+	DEF getNumberOfVertices(self)
+		RETURN(self.numberOfVertices)
+		
+	
+	
