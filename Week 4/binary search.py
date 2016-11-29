@@ -1,7 +1,7 @@
 
 def BinarySearch(aList,lowI,upI):
-    """Enter a sorted array and an lower and upper interval and this fucntion \n
-    will return a boolean showing whether a element(s) in the array fit within that range"""
+    """Enter a sorted array and a lower and upper interval and this fucntion \n
+    will return a Boolean showing whether an element(s) in the array fit within that range"""
     
     
     lowestValue = 0

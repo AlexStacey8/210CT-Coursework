@@ -4,11 +4,11 @@ def PrimeNumber(n,x):
   
   if n <= 1:
     return("Your Number isn't Prime")
-  elif n == 2:
+  elif n = 2:
     return("Your number is Prime")
-  elif x == 1:
+  elif x = 1:
     return("Your number is Prime")
-  elif n%x == 0:
+  elif n%x = 0:
     return("Your Number isn't Prime")
   elif n%x != 0:
     return(PrimeNumber(n,x-1))

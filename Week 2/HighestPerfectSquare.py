@@ -1,7 +1,6 @@
-#week 3 task 3 basic
 
 def HighestPerfectSquare(x):
-    """Given a positive integer this fuction will return the highest perfect square that is either equal or less than the number"""
+    """Given a positive integer this function will return the highest perfect square that is either equal or less than the number"""
 
     n = 1 #number to test 
     perfectSquare = 1 #current highest perfect square

@@ -19,7 +19,23 @@ ReverseAString(sentence):
 		n <- n - 1
 
 	RETURN(reversedList)
+Big O notation for this function O(n)
 
+#week 3 task 2
+Checking if a number is prime
+PrimeNumber(n,x):
+  
+	IF n <= 1:
+		return("Your Number isn't Prime")
+	ELSE IF n = 2:
+		return("Your number is Prime")
+	ELSE IF x = 1:
+		return("Your number is Prime")
+	ELSE IF n%x = 0:
+		return("Your Number isn't Prime")
+	ELSE IF n%x != 0:
+		return(PrimeNumber(n,x-1))
+  
 #week 3 task 3
 Removing vowels function
 
@@ -31,25 +47,25 @@ RemoveVowels(string)
 
 		RETURN(RemoveVowels(newString))
 
-	ELIF e in string
+	ELSE IF e in string
 
 		newString <- replace 'e' in string with ''
 
 		RETURN(RemoveVowels(newString)
 
-	ELIF i in string
+	ELSE IF i in string
 
 		newString <- replace 'i' in string with ''
 
 		RETURN(RemoveVowels(newString)
 
-	ELIF o in string
+	ELSE IF o in string
 
 		newString <- replace 'o' in string with ''
 
 		RETURN(RemoveVowels(newString)
 
-	ELIF u in string
+	ELSE IF u in string
 
 		newString <- replace 'u' in string with ''
 
@@ -59,7 +75,7 @@ RemoveVowels(string)
 		RETURN(string)
 
 
-Big O notation for this function O(n)
+
 
 
 

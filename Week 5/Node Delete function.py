@@ -45,15 +45,16 @@ class List(object):
       values.append(str(n.value))
       n = n.next
       print("List: " ,",".join(values))
+      
+if __name__ == '__main__':
+  l = List()
+  l.insert(None, Node(4))
+  l.insert(l.head,Node(6))
+  l.insert(l.head,Node(8))
+  l.insert(l.head,Node(9))
+  l.insert(l.head,Node(13))
+  l.insert(l.head,Node(21))
+  l.display()
 
-l = List()
-l.insert(None, Node(4))
-l.insert(l.head,Node(6))
-l.insert(l.head,Node(8))
-l.insert(l.head,Node(9))
-l.insert(l.head,Node(13))
-l.insert(l.head,Node(21))
-l.display()
-
-l.delete(l.tail.prev)
-l.display()
+  l.delete(l.tail.prev)
+  l.display()

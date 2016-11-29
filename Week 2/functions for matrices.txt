@@ -6,7 +6,7 @@ Task 3:
 
 Pseudocode for functions that add, subtract and multiple matrices.
 
-These fuctions work by accepting two matrices which are arrays where each row in the matrix is an array within the array. 
+These functions work by accepting two matrices which are arrays where each row in the matrix is an array within the array. 
 example:
 matrix = [[1,2,3],
 	  [4,5,6],

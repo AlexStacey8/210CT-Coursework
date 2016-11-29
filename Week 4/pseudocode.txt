@@ -1,5 +1,5 @@
 #week 4 task 1
-#A binary search algorithm that return a boolean. the boolean represents whether an element in the array is within a given
+#A binary search algorithm that return a Boolean. the Boolean represents whether an element in the array is within a given
 range of numbers
 
 def BinarySearch(aList,lowerInterval,upperInterval)
@@ -18,12 +18,12 @@ def BinarySearch(aList,lowerInterval,upperInterval)
 
 			found <- True
 
-		ELIF lowerInterval > aList[middle]
+		ELSE IF lowerInterval > aList[middle]
 			
 			lowestValue <- middle + 1
 
 
-		ELIF upperInterval > aList[middle]
+		ELSE IF upperInterval > aList[middle]
 			
 			highestValue <- middle - 1
 

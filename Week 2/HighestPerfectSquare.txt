@@ -1,5 +1,5 @@
 
-Pseudocode for finding the hihgest perfect square given a number
+Pseudocode for finding the highest perfect square given a number
 
 HighestPerfectSquare(x)
 	

@@ -1,6 +1,6 @@
 def ExtractSubSquence(aList):
 
-    """This Fuction takes a list of numbers and extracts the longest sub sequence \n
+    """This Function takes a list of numbers and extracts the longest sub sequence \n
     of numbers that are in ascending order"""
     
     subSequence = []
@@ -36,4 +36,4 @@ def ExtractSubSquence(aList):
             
                 
                             
-print(ExtractSubSquence([1,2,1,5,8,9,3,4]))
+print(ExtractSubSquence([1,2,3,1,5,8,9,3,4]))
