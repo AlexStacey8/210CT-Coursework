@@ -3,17 +3,19 @@ class Vertex:
     def __init__(self,label):
 
         self.label = label
-        self.edges = []
+        self.edges = [] #list of edges connected to the vertex
 
-        self.edgesList = [] # for printing so i can confirm it works
+        self.edgesList = [] #a list to append the labels to for printing 
 
     def getInfo(self):
+        #printing the vertex label and the list of edge labels associated with that vertex
         print("Vertex >> " + str(self.label) + "\nEdges >> " + str(self.edgesList))
 
     def addEdge(self,vertex2):
         if vertex2 in self.edges:
             pass
         else:
+            #adding the edge to each vertex's edges list and adding the labels to edgesList so I can print the values
             (self.edges).append(vertex2)
             (self.edgesList).append(vertex2.label)
 
@@ -25,16 +27,16 @@ class Vertex:
 
 class Graph:
     def __init__(self):
-        self.vertices = []
+        self.vertices = [] #list of vertices
         self.verticesList = [] #I append labels to this for printing
         self.numberOfVertices = 0
 
     def addVertex(self,vertex):
         self.numberOfVertices = self.numberOfVertices + 1
         
-        v = Vertex(vertex)
-        (self.vertices).append(v)
-        (self.verticesList).append(v.label)
+        v = Vertex(vertex) #creating the vertex in the vertex class
+        (self.vertices).append(v) #adding vertex to vertices list
+        (self.verticesList).append(v.label) #adding label to verticesList
 
         return(v)
         
@@ -52,14 +54,15 @@ class Graph:
         stack.append(startVertex)
 
         while stack != []:
-            u = stack.pop()
+            u = stack.pop() #pop from top of stack
             if u.label not in visited:
-                visited.append(u.label)
-                for edge in u.edges:
-                    stack.append(edge)
+                visited.append(u.label) #vertex has be visited so add the label to the list
+                for edge in u.edges: 
+                    stack.append(edge) #append the vertex's edges to the stack
 
         return(visited)
-    
+
+        #writing the data to a file
         f = open("DFS.txt","w")
         f.write("Depth First Traversal >> " + str(visited))
         f.close()
@@ -72,19 +75,20 @@ class Graph:
         queue = []
         visited = []
 
-        queue.insert(0,startVertex)
+        queue.insert(0,startVertex) #append the vertex to the queue
 
         while queue != []:
-            u = queue.pop()
+            u = queue.pop() #pop from end of start of queue
 
             if u.label not in visited:
-                visited.append(u.label)
+                visited.append(u.label) #vertex has be visited so add the label to the list
 
                 for edge in u.edges:
-                    queue.insert(0,edge)
+                    queue.insert(0,edge) #insert value to the front of the queue 
 
         return(visited)
-        
+
+        #writing the data to a file
         f = open("BFS.txt","w")
         f.write("Breadth First Traversal >> " + str(visited))
         f.close()

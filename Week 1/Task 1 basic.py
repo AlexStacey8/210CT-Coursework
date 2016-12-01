@@ -3,7 +3,7 @@
 
 def randomRearrange(yourList): 
 
-    """This fuction will randomly shuffle the elements in a list"""
+    """This function will randomly shuffle the elements in a list"""
     
     import random
 

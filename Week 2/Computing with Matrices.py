@@ -1,19 +1,19 @@
 
 
 def MultiplyingMatrices(matrix1,matrix2,finalMatrix):
-  for i in range(len(matrix1)):
-    for j in range(len(matrix1)):
-      for k in range(len(matrix1)):
-        counter = matrix1[i][k] * matrix2[k][j]
-        finalMatrix[i][j] = counter + finalMatrix[i][j]
+  for i in range(len(matrix1)): #iterating through the rows
+    for j in range(len(matrix1)): #iterating through elements in each row
+      for k in range(len(matrix1)): #iterating through the columns
+        counter = matrix1[i][k] * matrix2[k][j] #product of the two number in matrix
+        finalMatrix[i][j] = counter + finalMatrix[i][j] #adding the product to the value in the final matrix
         
 
   return(finalMatrix)
 
 def MultiplyingMatrix(matrix1,B):
 
-  for i in range(len(matrix1)):
-    for j in range(len(matrix1)):
+  for i in range(len(matrix1)): #iterating through the rows
+    for j in range(len(matrix1)): #iterating through elements in each row
       matrix1[i][j] = matrix1[i][j]*B
       
      
@@ -22,8 +22,8 @@ def MultiplyingMatrix(matrix1,B):
 
 def AddingMatrices(matrix1,matrix2):
 
-  for i in range (len(matrix1)):
-    for j in range(len(matrix1)):
+  for i in range (len(matrix1)): #iterating through the rows
+    for j in range(len(matrix1)): #iterating through elements in each row
       matrix1[i][j] = matrix1[i][j] + matrix2[i][j]
       
 
@@ -31,8 +31,8 @@ def AddingMatrices(matrix1,matrix2):
 
 def SubtractingMatrices(matrix1,matrix2):
 
-  for i in range (len(matrix1)):
-    for j in range(len(matrix1)):
+  for i in range (len(matrix1)): #iterating through the rows
+    for j in range(len(matrix1)): #iterating through elements in each row
       matrix1[i][j] = matrix1[i][j] - matrix2[i][j]
 
   return(matrix1)

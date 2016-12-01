@@ -28,15 +28,15 @@ class List(object):
   def delete(self,n):
     
     if n.prev != None:
-      n.prev.next = n.next
+      n.prev.next = n.next #make the next node the previous node's next node
     else:
-      self.head = n.next
+      self.head = n.next #make the head of the linked list the next node
 
     if n.next != None:
-      n.next.prev = n.prev
+      n.next.prev = n.prev #make the previous node the next node's previous node
 
     else:
-      self.tail = n.prev
+      self.tail = n.prev #make the head of the linked list the previous node
       
   def display(self):
     values = []
