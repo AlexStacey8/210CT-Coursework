@@ -6,9 +6,9 @@ def BinarySearch(aList,lowerInterval,upperInterval)
 
 	lowestValue <- 0
 	
-	highestValue = length[aList] - 1
+	highestValue <- length[aList] - 1
 
-	found = False
+	found <- False
 
 	WHILE lowestValue <= higestValue AND NOT found:
 

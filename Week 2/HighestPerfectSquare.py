@@ -10,7 +10,7 @@ def HighestPerfectSquare(x):
         n = n+1
         
         
-    return("The Highest perfect suqare is >> " + str(perfectSquare))
+    return("The Highest perfect square is >> " + str(perfectSquare))
 
         
 

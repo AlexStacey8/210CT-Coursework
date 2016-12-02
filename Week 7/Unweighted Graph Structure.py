@@ -94,33 +94,35 @@ class Graph:
         f.close()
 
 
-graph = Graph()
-v1 = graph.addVertex(6)
-v2 = graph.addVertex(5)
-v3 = graph.addVertex(4)
-v4 = graph.addVertex(3)
-v5 = graph.addVertex(2)
+if __name__ == '__main__':
+    
+    graph = Graph()
+    v1 = graph.addVertex(6)
+    v2 = graph.addVertex(5)
+    v3 = graph.addVertex(4)
+    v4 = graph.addVertex(3)
+    v5 = graph.addVertex(2)
 
 
-v1.addEdge(v2)
-v1.addEdge(v3)
-v1.addEdge(v2)
+    v1.addEdge(v2)
+    v1.addEdge(v3)
+    v1.addEdge(v2)
 
-v2.addEdge(v4)
+    v2.addEdge(v4)
 
-v3.addEdge(v4)
+    v3.addEdge(v4)
 
-v4.addEdge(v5)
+    v4.addEdge(v5)
 
-v1.getInfo()
-v2.getInfo()
-v3.getInfo()
-v4.getInfo()
-v5.getInfo()
+    v1.getInfo()
+    v2.getInfo()
+    v3.getInfo()
+    v4.getInfo()
+    v5.getInfo()
 
-print(graph.depthFirstSearch(v3))
+    print(graph.depthFirstSearch(v3))
 
-print(graph.breadthFirstSearch(v3))
+    print(graph.breadthFirstSearch(v3))
 
 
 

@@ -24,7 +24,7 @@ def BinarySearch(aList,lowI,upI):
             lowestValue = middle + 1 
             
         elif upI < aList[middle]:
-            #if uper interval is less than the middle
+            #if upper interval is less than the middle
             #make the middle value the middle - 1
             highestValue = middle - 1
             

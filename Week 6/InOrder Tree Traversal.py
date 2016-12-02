@@ -45,9 +45,9 @@ def in_order(tree):
       currentNode = currentNode.left #follow left hand side of tree
 
     else:
-      if len(inOrderStack) > 0: #if an elemnt is in the stack
+      if len(inOrderStack) > 0: #if an element is in the stack
         currentNode = inOrderStack.pop() #pop off the top of stack and make the current node
-        inOrderList.append(currentNode.value) #append the value of the cureent node to the final list
+        inOrderList.append(currentNode.value) #append the value of the current node to the final list
         currentNode = currentNode.right #and then go down the right hand side of the branch
 
       else:

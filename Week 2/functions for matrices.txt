@@ -16,7 +16,7 @@ AddingMatrices(matrix1,matrix2)
 
 	for i <- 0 to length[matrix1]
 		for j <- 0 length[matrix1]
-			matrix1[i][j] = matrix1[i][j] + matrix2[i][j]
+			matrix1[i][j] <- matrix1[i][j] + matrix2[i][j]
 
 	RETURN(matrix1)
 
@@ -26,7 +26,7 @@ SubtractingMatrices(matrix1,matrix2)
 
 	for i <- 0 to length[matrix1]
 		for j <- 0 length[matrix1]
-			matrix1[i][j] = matrix1[i][j] - matrix2[i][j]
+			matrix1[i][j] <- matrix1[i][j] - matrix2[i][j]
 
 	RETURN(matrix1)
 Big O notation for this algorithm = O(n^2)

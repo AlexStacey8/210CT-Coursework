@@ -1,6 +1,6 @@
 
 def RemoveVowels(string):
-    """ enter a string in lower case and this fuction will remove the vowels"""
+    """ enter a string in lower case and this function will remove the vowels"""
     
     if 'a' in string:
         newString = string.replace('a','') #removes the vowel from the string
